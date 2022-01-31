@@ -8,6 +8,7 @@ namespace KaspiTestApp
         private static string minAmountErrorKz = "Толықтыру үшін ең аз сома – 1 теңге";
         private static string maxAmountErrorRu = "Максимальная сумма для пополнения - 500000 тенге";
         private static string maxAmountErrorKz = "Толықтыру үшін максималды сома – 500 000 теңге";
+
         public static string getProvider(string acc) 
         {
             string prefix = acc.Substring(0,3);
@@ -31,6 +32,7 @@ namespace KaspiTestApp
                     return "Unknown operator";
             }
         }
+
         public static string getMessageByProvider(string provider) 
         {
             string message = string.Empty;
